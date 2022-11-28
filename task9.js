@@ -14,14 +14,14 @@ function reverseThisString(string){
 
 function swapCase(string) {
     var result = "";
-    // loop over the characters in input string
+  
     for(var i=0; i<string.length; i++){
-        // if current character is uppercase then
+   
         if(string[i] == string[i].toUpperCase()){
-            // convert it to lower case
+            
             result += string[i].toLowerCase();
         }
-        // otherwise convert it to lower case
+       
         else{
             result += string[i].toUpperCase();
         }
