@@ -31,16 +31,14 @@ function swapCase(string) {
 // #3 convert array of numbers from farenheit to celcius
 
 function toCelcius(array){
-    // map resultArr to anonymous function with temperature(Fahrenheit) as argument one at a time
-    // the anonymous function returns the temperature in Celcius 
+  
     const resultArr = array.map((temp)=>{return (temp - 32) * 5/9});
     return resultArr;
 }
 //#4 a function that takes an input array and returns an array of booleans (>=75) or fail (<75)
 
 function passOrFail(array){
-    // map resultArray to anonymous function that takes one element at a time as argument 
-    // and return true if element is >= 75 and false otherwise
+  
     const resultArray = array.map((element)=>{return element >= 75 ? true : false});
     return resultArray;
 }
